@@ -1,0 +1,32 @@
+div {
+    width: 192px;
+    height: 192px;
+    border-radius: 36px;
+    background: linear-gradient(145deg, #fcdd2e, #fcb600);
+    position: relative;
+}
+
+div::after {
+    content: '';
+    height: 96px;
+    width: 96px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    border-radius: 0 0 36px 0;
+}
+
+div::before {
+    content: '';
+    height: 96px;
+    width: 96px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    background: #f5f4f0;
+    border-radius: 0 0 0 36px;
+    box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.18)
+}
