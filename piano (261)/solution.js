@@ -2,7 +2,6 @@ const piano = document.querySelector('.keys')
 const keys = document.querySelectorAll('.key')
 const notes = document.querySelectorAll('.symbol')
 
-const all = document.querySelector('body')
 let notesArr = []
 
 const pianoNotes = []
