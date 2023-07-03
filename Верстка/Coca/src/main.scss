@@ -1,7 +1,5 @@
-$font-size: 1rem;
-$font-color: lch(28 99 35);
-
-html {
-  font-size: $font-size;
-  color: $font-color;
-}
+ @import './common/all';
+ @import './common/header';
+ @import './common/text';
+ @import './common/vars';
+ @import './pages/main/mainPage';
