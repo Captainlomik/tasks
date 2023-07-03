@@ -1,0 +1,36 @@
+.header {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 0;
+    }
+
+    &__logo{
+        &-img{
+            max-width: 140px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__ul {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: 32px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__contact{
+        margin-left: 68px;
+    }
+}
