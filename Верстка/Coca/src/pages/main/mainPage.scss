@@ -1,0 +1,32 @@
+@import 'emailInput';
+@import '../Coca/src/common/text.scss';
+
+.firstScreen {
+    position: relative;
+
+    &__left {
+        width: 70%;
+        height: calc(100vh - 122px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &-header{
+            font-size: 80px;
+        }
+
+    }
+
+    &__left::before {
+        content: '';
+        display: inline-block;
+        width: 550px;
+        height: 550px;
+        border-radius: 50%;
+        opacity: 0.13;
+        background: #FA7515;
+        filter: blur(110px);
+        position: absolute;
+        top: 5px;
+    }
+}
