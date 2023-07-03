@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
+const HTMLLoader = require('html-loader');
 const path = require('path');
 
 module.exports = {
@@ -16,7 +17,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(scss|css)$/,
+                test: /\.s[ac]ss$/i,
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
             },
             {
@@ -30,6 +31,10 @@ module.exports = {
                     filename: path.join('icons', '[name].[contenthash][ext]'),
                 },
             },
+            {
+                test: /\.html$/,
+                use: 'html-loader'
+  },
         ],
     },
     plugins: [
