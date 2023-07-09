@@ -73,7 +73,7 @@
         filter: blur(90px);
         position: absolute;
         right: -100px;
-        top:100px;
+        top: 100px;
         z-index: -1;
     }
 
@@ -100,16 +100,115 @@
 
 
 //PROBLEMS
-.black-wrap{
+.black-wrap {
     background-color: $neutral_100;
+    padding: 100px 0;
 }
 
-.problem{
-    &__head{
-        width: 60%;
-        &-header{
+.problem {
+    &__head {
+        width: 55%;
+        margin-bottom: 80px;
+
+        &-header {
             color: $neutral_10;
+            margin-bottom: 24px;
         }
+
+        &-txt {
+            color: $neutral_60;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+
+    &__blocks:last-child {
+        margin: 0;
+    }
+}
+
+.block {
+    width: 40%;
+
+    &__header {
+        margin: 24px 0;
+        width: 55%;
+        color: $neutral_10;
+    }
+
+    &__txt {
+        font-size: 16px;
+        line-height: 26px;
+        color: $neutral_60;
+    }
+}
+
+//PASSION
+.passion {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 160px 0 94px 0;
+    }
+
+    &__images {
+        background: url('./assets/passion_bg.png');
+        width: 60%;
+        max-width: 585px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        img {
+            position: absolute;
+            right:30px;
+            bottom: 40px;
+            width: 290px;
+            height: 298px;
+        }
+    }
+
+
+    &__block {
+        margin-left: 58px;
+        width: 40%;
+        max-width: 557px;
+    }
+
+    &__txt {
+        margin-top: 24px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        color: $neutral_60;
+        max-width: 360px;
+    }
+
+    &__ticks {
+        margin-top: 40px;
+    }
+
+    &__tick {
+        margin-bottom: 32px;
+        color: $neutral_100;
+        display: flex;
+    }
+
+    &__tick:before {
+        content: url('./assets/icons/circleTick.svg');
+        width: 24px;
+        height: 24px;
+        display: block;
+        margin-right: 16px;
     }
 
 }
