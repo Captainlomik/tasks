@@ -354,3 +354,135 @@
     background: $neutral_30;
     margin-top: 22px;
 }
+
+//SERVICES
+.services {
+    margin: 160px 0 100px 0;
+
+    &__text {
+        margin-bottom: 80px;
+    }
+
+    &__header {
+        max-width: 600px;
+        margin-bottom: 24px;
+    }
+
+    &__txt {
+        max-width: 462px;
+    }
+
+    &__blocks {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 50% 50%;
+        column-gap: 64px;
+        row-gap: 56px;
+    }
+
+    &__block {
+        display: flex;
+        width: 100%;
+
+        &-img {
+            width: 240px;
+            height: 273px;
+            position: relative;
+        }
+
+        &-text {
+            width: 50%;
+            margin-left: 60px;
+        }
+
+        &-header {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 42px;
+            letter-spacing: -1px;
+        }
+
+        &-txt {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            color: $neutral_60;
+            margin-top: 24px;
+        }
+    }
+}
+
+.img-1 {
+    background: url('./assets/Rectangle1.png');
+
+    &:after {
+        content: url('./assets/icons/smile.svg');
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        background: rgba(22, 26, 52, 0.60);
+        backdrop-filter: blur(4px);
+        border-radius: 50px;
+        top: 12px;
+        right: 12px;
+        padding: 12px;
+    }
+}
+
+
+.img-2 {
+    background: url('./assets/Rectangle2.png');
+
+    &:after {
+        content: url('./assets/icons/Icon (2).svg');
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        background: rgba(22, 26, 52, 0.60);
+        backdrop-filter: blur(4px);
+        border-radius: 50px;
+        top: 12px;
+        right: 12px;
+        padding: 12px;
+    }
+}
+
+.img-3 {
+    background: url('./assets/Rectangle3.png');
+
+    &:after {
+        content: url('./assets/icons/Icon (3).svg');
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        background: rgba(22, 26, 52, 0.60);
+        backdrop-filter: blur(4px);
+        border-radius: 50px;
+        top: 12px;
+        right: 12px;
+        padding: 12px;
+    }
+}
+
+.img-4 {
+    background: url('./assets/Rectangle4.png');
+
+    &:after {
+        content: url('./assets/icons/Icon (4).svg');
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        background: rgba(22, 26, 52, 0.60);
+        backdrop-filter: blur(4px);
+        border-radius: 50px;
+        top: 12px;
+        right: 12px;
+        padding: 12px;
+    }
+}
