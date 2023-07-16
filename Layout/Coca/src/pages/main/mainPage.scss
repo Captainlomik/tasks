@@ -486,3 +486,63 @@
         padding: 12px;
     }
 }
+
+//INSIGHT
+.insight {
+    margin: 60px 0 90px 0;
+
+    &__header {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__txt {
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        color: $neutral_60;
+    }
+
+    &__carusel {
+        margin-top: 80px;
+        display: flex;
+
+        &-block {
+            margin-left: 32px;
+            max-width: 582px;
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        &-data {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            color: $neutral_60;
+        }
+
+        &-author {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            color: $neutral_60;
+        }
+
+        &-header {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 48px;
+            letter-spacing: -0.64px;
+        }
+    }
+}
