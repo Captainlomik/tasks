@@ -508,10 +508,15 @@
     &__carusel {
         margin-top: 80px;
         display: flex;
+        justify-content: space-between;
 
         &-block {
-            margin-left: 32px;
-            max-width: 582px;
+            margin-right: 32px;
+            max-width: 586px;
+        }
+
+        &-block:last-child {
+            margin-right: 0;
         }
 
         &-info {
@@ -544,5 +549,210 @@
             line-height: 48px;
             letter-spacing: -0.64px;
         }
+    }
+}
+
+//TEATIMONIALS
+.testimonials {
+    padding-top: 69px;
+    padding-bottom: 160px;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 112px;
+    }
+
+    &__headers {
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        /* 67.2px */
+        letter-spacing: -2px;
+        max-width: 530px;
+    }
+
+    &__txt {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        color: $neutral_60;
+        max-width: 376px;
+    }
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    margin: 0 auto;
+
+    &__txt {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        /* 52px */
+        letter-spacing: -1px;
+        width: 898px;
+
+    }
+
+    &__stars {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__star {
+        margin-right: 8px;
+
+    }
+
+    &__author {
+        margin-top: 40px;
+        display: flex;
+
+        &-avatar {
+            margin-right: 24px;
+        }
+
+        &-name {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+        }
+
+        &-professia {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            color: $neutral_60;
+        }
+    }
+
+}
+
+//FOOTER
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 112px 0 52px 0;
+
+    &__header {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 32px;
+    }
+
+    &__txt {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        min-width: 643px;
+        width: 643px;
+        display: flex;
+        position: relative;
+    }
+
+    &__txt::before {
+        content: '';
+        min-width: 76px;
+        height: 2px;
+        display: block;
+        margin-right: 24px;
+        background: $neutral_100;
+        position: relative;
+        top: 20px;
+    }
+
+    &__btn {
+        background-color: $neutral_100;
+        color: $neutral_10;
+        padding: 16px 32px;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        height: 56px;
+        width: 176px;
+    }
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 76px 0 79px 0;
+    }
+
+    &-info {
+        margin-right: 144px;
+    }
+
+    &-logo {
+        max-width: 140px;
+    }
+
+    &-txt {
+        max-width: 292px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    &-head {
+        margin-bottom: 24px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &-item {
+        margin-bottom: 16px;
+    }
+
+    &-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__copyright {
+    padding: 0 0 60px 0;
+
+    &-txt {
+        text-align: center;
+        color: $neutral_50;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $neutral_50;
+        margin-bottom: 46px;
     }
 }
